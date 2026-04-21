@@ -16,6 +16,16 @@ textarea {
   font-size: 0.95rem;
 }
 
+.source-ref table {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.source-ref th:first-child,
+.source-ref td:first-child {
+  white-space: nowrap;
+}
+
 .teacher-note {
   border-left: 4px solid #0f766e;
   background: #f0fdfa;
