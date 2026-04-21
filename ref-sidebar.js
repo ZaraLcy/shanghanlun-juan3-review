@@ -36,7 +36,7 @@ function enhanceSourceTextPage() {
       .map((node) => node.textContent.trim())
       .join("")
       .trim();
-    const kind = classifySourceParagraph(bodyText, previousKind);
+    const kind = classifySourceParagraph(paragraph.id, bodyText, previousKind);
     previousKind = kind.key;
 
     paragraph.classList.add(`source-${kind.key}`);
@@ -56,21 +56,62 @@ function enhanceSourceTextPage() {
   }
 }
 
-function classifySourceParagraph(text, previousKind) {
-  if (/^［補正曰］/.test(text)) return { key: "correction", label: "補正曰" };
-  if (/^［正曰］/.test(text)) return { key: "correction", label: "正曰" };
-  if (/^［補曰］/.test(text)) return { key: "supplement", label: "補曰" };
+const ORIGINAL_PARAGRAPH_IDS = new Set([
+  "p001",
+  "p005",
+  "p008",
+  "p012",
+  "p015",
+  "p023",
+  "p027",
+  "p034",
+  "p038",
+  "p041",
+  "p047",
+  "p054",
+  "p058",
+  "p066",
+  "p070",
+  "p074",
+  "p079",
+  "p088",
+  "p092",
+  "p095",
+  "p108",
+  "p111",
+  "p115",
+  "p119",
+  "p123",
+  "p131",
+  "p139",
+  "p142",
+  "p150",
+  "p154",
+  "p158",
+  "p166",
+  "p170",
+  "p178",
+  "p185",
+  "p189",
+  "p198",
+  "p205",
+  "p214",
+  "p217",
+]);
+
+function classifySourceParagraph(id, text, previousKind) {
+  if (ORIGINAL_PARAGRAPH_IDS.has(id)) return { key: "original", label: "仲景原文" };
+  if (/^［補正曰］/.test(text)) return { key: "correction", label: "唐宗海補正" };
+  if (/^［正曰］/.test(text)) return { key: "correction", label: "唐宗海正曰" };
+  if (/^［補曰］/.test(text)) return { key: "supplement", label: "唐宗海補曰" };
   if (/^［述］/.test(text)) return { key: "note", label: "述評" };
   if (/^［.+曰］/.test(text)) return { key: "note", label: "諸家按語" };
-  if (/(湯方|丸方|散方)$/.test(text)) return { key: "formula-title", label: "方名" };
+  if (/(湯方|丸方|散方|湯)$/.test(text)) return { key: "formula-title", label: "方名" };
   if (/^上[一二三四五六七八九十百上]+味/.test(text) || previousKind === "formula-title") {
     return { key: "formula", label: "方藥/煎服" };
   }
   if (/^(此一節|此章|上二節|此與|此節|然此|甚矣|所以然者)/.test(text)) {
     return { key: "note", label: "按語/述評" };
   }
-  if (/^(太陽病|病人|傷寒|婦人|結胸|小結胸|心下痞|本以|下利|發汗|服桂枝湯|太陽與少陽|病發於陽|藏結|問曰|答曰)/.test(text)) {
-    return { key: "original", label: "仲景原文" };
-  }
-  return { key: "commentary", label: "淺註" };
+  return { key: "commentary", label: "淺註（陳修園）" };
 }
