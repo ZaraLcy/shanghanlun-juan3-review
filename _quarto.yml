@@ -5,7 +5,7 @@ project:
 book:
   title: "傷寒論淺注補正-卷三複習"
   subtitle: "從誤治後遺症到旋覆代赭湯"
-  author: "教學整理"
+  author: "整理 by Codex, Frank Lee 輔助編輯"
   date: today
   chapters:
     - index.qmd
