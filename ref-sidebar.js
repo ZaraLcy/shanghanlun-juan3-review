@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const box = document.createElement("aside");
   box.className = "source-sidebar";
   const items = Array.from(seen.entries())
-    .map(([ref, href]) => `<li><a href="${href}">010_taiyang_3.md ${ref}</a></li>`)
+    .map(([ref, href]) => `<li><a href="${href}">010_taiyang_3.md#${ref}</a></li>`)
     .join("");
   box.innerHTML = `<h2>原文參照</h2><ul>${items}</ul>`;
   margin.appendChild(box);
