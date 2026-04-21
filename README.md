@@ -17,7 +17,10 @@
   - `07.qmd`：第七章 水、火、陽虛與痞硬
   - `08.qmd`：第八章 胃中不和與反覆誤下
   - `09.qmd`：第九章 旋覆代赭湯作為出口
+  - `source-text.qmd`：原文參照，收錄 `p001-p224` 可點閱段落
   - `source-notes.qmd`：原文來源與引用規則
+- 已套用芫荽體網頁字型，並保留本機字型 fallback。
+- 章節中的「原文閱讀」來源已可點閱，右側欄位會列出本頁使用的原文段落。
 
 ## 原文來源
 
@@ -28,7 +31,7 @@
 ../wiki/010_taiyang_3_pre_xuanfu_daizhe_context.md
 ```
 
-本 pilot 的原文範圍：
+本書的原文範圍：
 
 ```text
 010_taiyang_3.md paragraph 001-224

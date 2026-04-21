@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Iansui&display=swap");
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Iansui", "芫荽", "芫荽體", "Iansui Regular", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+}
+
 .source-ref {
   border-left: 4px solid #6b7280;
   background: #f8fafc;
@@ -15,4 +25,52 @@
 
 table {
   font-size: 0.95rem;
+}
+
+.source-link {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.source-link::after {
+  content: " ↗";
+  font-size: 0.85em;
+}
+
+.source-paragraph {
+  border-left: 4px solid #94a3b8;
+  background: #f8fafc;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+}
+
+.source-paragraph h3 {
+  margin-top: 0;
+  color: #475569;
+}
+
+.source-sidebar {
+  border-top: 1px solid #d0d7de;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.source-sidebar h2 {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.source-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.source-sidebar li {
+  margin-bottom: 0.35rem;
+}
+
+.source-sidebar a {
+  text-decoration: none;
 }
