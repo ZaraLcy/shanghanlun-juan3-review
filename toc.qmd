@@ -1,0 +1,44 @@
+---
+title: ""
+format:
+  typst:
+    papersize: a5
+    margin:
+      x: 22mm
+      y: 28mm
+    mainfont: "GenRyuMin2 TW R"
+    fontsize: 10pt
+lang: zh-TW
+---
+
+```{=typst}
+#import "_toc-data.typ": toc-data
+
+#set page(numbering: none, footer: none, header: none)
+
+#align(center)[
+  #text(font: "GenRyuMin2 TW B", size: 22pt)[傷寒論淺注補正-卷三複習]
+  #v(0.8em)
+  #text(size: 13pt, fill: luma(45%))[目次]
+]
+
+#v(1.5em)
+
+#for part in toc-data [
+  text(font: "GenRyuMin2 TW B", size: 12pt)[#part.name]
+  v(0.6em)
+  for ch in part.chapters [
+    grid(
+      columns: (1fr, auto),
+      gutter: 1em,
+      [#ch.title],
+      [#if ch.page != none { ch.page } else { text(fill: luma(55%))[規劃中] }]
+    )
+    if ch.subtitle != none [
+      text(size: 8.5pt, fill: luma(45%))[#ch.subtitle]
+    ]
+    v(0.5em)
+  ]
+  v(0.8em)
+]
+```

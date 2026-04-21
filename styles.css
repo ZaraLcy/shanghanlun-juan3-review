@@ -1,0 +1,18 @@
+.source-ref {
+  border-left: 4px solid #6b7280;
+  background: #f8fafc;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+.teacher-note {
+  border-left: 4px solid #0f766e;
+  background: #f0fdfa;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+}
+
+table {
+  font-size: 0.95rem;
+}

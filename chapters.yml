@@ -1,0 +1,51 @@
+# 全書章節主檔。
+# 後續若製作 Typst PDF 目次，chapter title 需與各章 H1 完全一致。
+
+parts:
+  - name: "第一部　誤治後的第一張地圖"
+    chapters:
+      - num: 1
+        title: "第一章 當治療改變疾病"
+        subtitle: "從誤吐、過汗、誤下建立病程重建的讀法"
+        status: "pilot"
+      - num: 2
+        title: "第二章 第一批安全分叉"
+        subtitle: "血、水、結胸、藏結的初步鑑別"
+        status: "pilot"
+
+  - name: "第二部　胸膈與如結胸"
+    chapters:
+      - num: 3
+        title: "第三章 結胸系統"
+        subtitle: "大結胸、小結胸、熱實、水結、燥結與寒實"
+        status: "draft"
+      - num: 4
+        title: "第四章 像結胸但不是結胸"
+        subtitle: "太少併病、熱入血室、如瘧與譫語見鬼狀"
+        status: "draft"
+
+  - name: "第三部　少陽樞機與痞證"
+    chapters:
+      - num: 5
+        title: "第五章 少陽樞機與微結"
+        subtitle: "支結、微結、陽微結與頭汗出的判讀"
+        status: "draft"
+      - num: 6
+        title: "第六章 痞證的入口"
+        subtitle: "從但滿不痛、按之濡進入半夏瀉心湯"
+        status: "draft"
+      - num: 7
+        title: "第七章 水、火、陽虛與痞硬"
+        subtitle: "十棗湯、大黃黃連瀉心湯、附子瀉心湯、五苓散"
+        status: "draft"
+
+  - name: "第四部　胃氣與出口"
+    chapters:
+      - num: 8
+        title: "第八章 胃中不和與反覆誤下"
+        subtitle: "生薑瀉心湯、甘草瀉心湯、赤石脂禹餘糧湯"
+        status: "draft"
+      - num: 9
+        title: "第九章 旋覆代赭湯作為出口"
+        subtitle: "病已解後，胃虛挾飲、氣逆不降"
+        status: "draft"

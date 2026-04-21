@@ -1,0 +1,48 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "傷寒論淺注補正-卷三複習"
+  subtitle: "從誤治後遺症到旋覆代赭湯"
+  author: "教學整理"
+  date: today
+  chapters:
+    - index.qmd
+    - 01.qmd
+    - 02.qmd
+    - 03.qmd
+    - 04.qmd
+    - 05.qmd
+    - 06.qmd
+    - 07.qmd
+    - 08.qmd
+    - 09.qmd
+  appendices:
+    - source-notes.qmd
+
+lang: zh
+
+bibliography: references.bib
+csl: apa.csl
+citeproc: true
+link-citations: true
+reference-section-title: "參考文獻"
+
+crossref:
+  chapters: true
+  fig-title: "圖"
+  tbl-title: "表"
+  sec-prefix: "節"
+  tbl-prefix: "表"
+  fig-prefix: "圖"
+
+format:
+  html:
+    theme:
+      light: cosmo
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: false
+    css: styles.css

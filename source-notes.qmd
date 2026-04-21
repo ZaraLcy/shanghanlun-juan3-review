@@ -1,0 +1,14 @@
+# 原文來源與引用規則
+
+本書稿的典籍底本為中醫笈成《傷寒論淺註補正》[@jicheng_shanghan_qianzhu_buzheng]，並使用本地化 Markdown 文本作為教學引用來源。
+
+本 pilot 主要使用：
+
+- `../sections/010_taiyang_3.md`
+- 範圍：paragraph 001-224
+- 前置整理：`../wiki/010_taiyang_3_pre_xuanfu_daizhe_context.md` [@local_wiki_pre_xuanfu_daizhe]
+
+引用格式：
+
+- `010_taiyang_3.md p001` 表示本地 Markdown 段落標記 `<!-- paragraph: 001 -->`
+- 書中「原文閱讀」只摘取短句作為定位與精讀提示；完整段落請回到本地原文檔查閱
